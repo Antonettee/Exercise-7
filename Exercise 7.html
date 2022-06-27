@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title> 
+    <link rel="stylesheet" href="Checkout.css">
+</head>
+
+<body>
+    <div>
+    <h1>Checkout Form</h1>
+    <form action="#" method="">
+    <table>
+    <tr>
+        <td>
+            <label for="name">Name:</label>
+        </td>
+            
+        <td>   
+            <input type="text" name="name" id="name" size="50">
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <label for="address">Adress:</label>
+         </td>   
+            
+         <td>   
+            <input type="text" name="address" id="address" size="50">
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label for="region">Region:</label>
+        </td>
+    
+        <td>
+            <select name="region" id="region">
+            
+                <option value="NCR">NCR</option>
+               
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label for="contact number">Contact Number:</label>
+        </td>
+            
+        <td>    
+            <input type="text" name="contact number" id="contact" size="50">
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            Payment Method
+        </td>
+
+        <td>
+            <input type="radio" name="payment" id="CashOnDelivery" value="CashOnDelivery">
+            <label for="CashOnDelivery">Cash on Delivery</label>
+        </td>
+     </tr>
+
+     <tr>
+         <td>
+
+         </td>
+     
+         <td>
+            <input type="radio" name="payment" id="MasterCard" value="MasterCard">
+            <label for="Mastercard">Master Card</label>
+        </td>
+        
+        
+        </tr>
+    <tr>
+        <td>
+
+        </td>
+
+        <td>
+            <input type="radio" name="payment" id="Visa" value="Visa">
+            <label for="Visa">Visa</label>
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>
+
+        </td>
+
+        <td>
+            <input type="radio" name="payment" id="AmericanExpress" value="AmericanExpress">
+            <label for="AmericanExpress">American Express</label>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+
+        </td>
+
+        <td>
+            <input type="submit" value="Place Order" onclick="display()">
+        </td>
+    </tr>
+
+   </table>
+   </form>
+</div>
+
+<div>
+    <table>
+        <tr>
+            <td>
+                <label for="name">Name:</label>
+            </td>
+                
+            <td>   
+               <div class="data" id="nameDisplay"></div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <label for="address">Adress:</label>
+             </td>   
+                
+             <td>   
+                <div class="data" id="addressDisplay"></div>
+            </td>
+        </tr>
+    
+        <tr>
+            <td>
+                <label for="region">Region:</label>
+            </td>
+        
+            <td>
+              
+                <div class="data" id="regionDisplay"></div>
+                 
+             </td>
+        </tr>
+    
+        <tr>
+            <td>
+                <label for="contact number">Contact Number:</label>
+            </td>
+                
+            <td>    
+                <div class="data" id="contactDisplay"></div>
+            </td>
+        
+        </tr>
+    
+        <tr>
+            <td>
+    
+            </td>
+    
+            <td>
+                <input type="submit" value="Place Order">
+            </td>
+        </tr>
+    
+       </table>
+</div>
+    <script>
+        function display(){
+            let name = document.getElementById("name").value;
+            let address = document.getElementById("address").value;
+            let region = document.getElementById("region").value;
+            let contact = document.getElementById("contact").value;
+            
+            document.getElementById("nameDisplay").innerHTML = name;
+            document.getElementById("addressDisplay").innerHTML = address;
+            document.getElementById("regionDisplay").innerHTML = region;
+            document.getElementById("contactDisplay").innerHTML = contact;
+
+
+        }
+    </script>
+</body>
+
+        
