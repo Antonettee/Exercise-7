@@ -1,0 +1,19 @@
+div {
+    width: 500px;
+    border: 15px solid brown;
+    padding: 20px;
+    margin: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    color: darkorange;
+}
+
+.data {
+    width: 500px;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    color: darkorange;
+}
+
+
